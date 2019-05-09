@@ -1,3 +1,9 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Ariel", sans-serif;
     color: 222;
@@ -8,9 +14,10 @@ a {
     text-decoration: none;
 }
 
-ul {
-    display: flex;
+a:hover {
+    text-decoration: underline;
 }
+
 
 button {
     position: relative;
@@ -31,23 +38,54 @@ button:hover {
 
 }
 
-p.center {
-    text-align: center;
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
 }
 
-.blink a {
+header a {
+    color: #222;
+    margin-left: 27px;
+}
+
+header img {
+    width: 32px;
+}
+
+
+main p {
+    text-align: center;
+    padding: 20px 20px;
+}
+
+main a {
     color: #1a0dab;
 }
 
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 .bottom-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     color: rgba(0,0,0,.54);
     background-color: #f2f2f2;
     border-bottom: 1px solid #e4e4e4;
     border-top: 1px solid #e4e4e4;
+    height: 40px;
 }
 
-.bottom-box a {
+.bottom-box a,
+.bottom-box p {
     color: rgba(0,0,0,.54);
+    padding-left:27px; 
+
 }
 
 .center {
@@ -79,6 +117,13 @@ p.center {
     padding-top: 18px;
 }
 
-.nav li {
-    display: inline-block;
+
+.gmail,
+.privacy {
+    margin-left: auto;
+}
+
+.settings,
+.user-icon {
+    margin-right: 27px;
 }
