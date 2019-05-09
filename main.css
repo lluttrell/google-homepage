@@ -8,6 +8,7 @@ body {
     font-family: "Ariel", sans-serif;
     color: 222;
     font-size: small;
+    min-width: 1000px;
 }
 
 a {
